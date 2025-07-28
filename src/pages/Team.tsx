@@ -17,84 +17,15 @@ const Team: React.FC = () => {
   const teamMembers: TeamMember[] = [
     {
       id: 1,
-      name: 'Alex Chen',
-      role: 'President',
-      image: 'https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg',
+      name: 'Prof. (Dr) Sourabh Sahu',
+      role: 'Club In-Charge',
+      image: 'https://i.ibb.co/hF9wwV4N/AIR.jpg',
       linkedin: '#',
       github: '#',
-      email: 'alex@roboticsclub.edu',
+      email: '#',
       bio: 'Computer Science major specializing in AI and robotics. Leading our autonomous systems projects.'
-    },
-    {
-      id: 2,
-      name: 'Sarah Johnson',
-      role: 'Vice President',
-      image: 'https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg',
-      linkedin: '#',
-      github: '#',
-      email: 'sarah@roboticsclub.edu',
-      bio: 'Mechanical Engineering student with expertise in robot design and manufacturing.'
-    },
-    {
-      id: 3,
-      name: 'Marcus Kim',
-      role: 'Technical Lead',
-      image: 'https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg',
-      linkedin: '#',
-      github: '#',
-      email: 'marcus@roboticsclub.edu',
-      bio: 'Electrical Engineering major focusing on embedded systems and sensor integration.'
-    },
-    {
-      id: 4,
-      name: 'Emily Rodriguez',
-      role: 'Software Lead',
-      image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg',
-      linkedin: '#',
-      github: '#',
-      email: 'emily@roboticsclub.edu',
-      bio: 'Software Engineering student passionate about robotics algorithms and machine learning.'
-    },
-    {
-      id: 5,
-      name: 'David Park',
-      role: 'Hardware Lead',
-      image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg',
-      linkedin: '#',
-      github: '#',
-      email: 'david@roboticsclub.edu',
-      bio: 'Mechatronics Engineering major specializing in actuators and control systems.'
-    },
-    {
-      id: 6,
-      name: 'Lisa Wang',
-      role: 'Competition Coordinator',
-      image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg',
-      linkedin: '#',
-      github: '#',
-      email: 'lisa@roboticsclub.edu',
-      bio: 'Industrial Engineering student organizing our competition teams and events.'
-    },
-    {
-      id: 7,
-      name: 'James Miller',
-      role: 'Research Lead',
-      image: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg',
-      linkedin: '#',
-      github: '#',
-      email: 'james@roboticsclub.edu',
-      bio: 'PhD candidate in Robotics focusing on human-robot interaction and collaborative systems.'
-    },
-    {
-      id: 8,
-      name: 'Nina Patel',
-      role: 'Workshop Coordinator',
-      image: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg',
-      linkedin: '#',
-      github: '#',
-      email: 'nina@roboticsclub.edu',
-      bio: 'Computer Engineering major organizing educational workshops and training sessions.'
     }
+    
   ];
 
   return (

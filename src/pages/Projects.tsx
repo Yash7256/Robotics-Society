@@ -11,6 +11,7 @@ interface Project {
   image: string;
   github?: string;
   demo?: string;
+  alt: string;
 }
 
 const Projects: React.FC = () => {
@@ -20,58 +21,23 @@ const Projects: React.FC = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: 'Autonomous Rover',
+      title: 'Radar System',
       description: 'A self-navigating rover capable of obstacle detection and path planning using computer vision.',
       year: '2024',
-      category: 'Autonomous Systems',
+      category: 'Basic Electronics',
       image: 'https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg',
+      alt: 'Radar',
       github: '#',
       demo: '#'
     },
     {
       id: 2,
-      title: 'Robotic Arm Controller',
+      title: 'Human Following Bot',
       description: 'Precision robotic arm with 6 degrees of freedom for industrial automation tasks.',
       year: '2024',
-      category: 'Manipulation',
+      category: 'Basic Electronics',
       image: 'https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg',
-      github: '#'
-    },
-    {
-      id: 3,
-      title: 'Drone Swarm System',
-      description: 'Coordinated multi-drone system for search and rescue operations with real-time communication.',
-      year: '2023',
-      category: 'Aerial Robotics',
-      image: 'https://images.pexels.com/photos/442587/pexels-photo-442587.jpeg',
-      demo: '#'
-    },
-    {
-      id: 4,
-      title: 'Humanoid Assistant',
-      description: 'Bipedal humanoid robot designed for human-robot interaction and service tasks.',
-      year: '2023',
-      category: 'Humanoid',
-      image: 'https://images.pexels.com/photos/8566526/pexels-photo-8566526.jpeg',
-      github: '#'
-    },
-    {
-      id: 5,
-      title: 'Smart Prosthetic Hand',
-      description: 'AI-powered prosthetic hand with neural control interface and haptic feedback.',
-      year: '2023',
-      category: 'Medical Robotics',
-      image: 'https://images.pexels.com/photos/8566473/pexels-photo-8566473.jpeg',
-      github: '#',
-      demo: '#'
-    },
-    {
-      id: 6,
-      title: 'Warehouse Automation Bot',
-      description: 'Automated sorting and packaging robot for warehouse logistics optimization.',
-      year: '2022',
-      category: 'Industrial',
-      image: 'https://images.pexels.com/photos/1108101/pexels-photo-1108101.jpeg',
+      alt: 'Bot',
       github: '#'
     }
   ];

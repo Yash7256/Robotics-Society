@@ -6,7 +6,7 @@ interface Resource {
   id: number;
   title: string;
   description: string;
-  category: 'Tutorial' | 'PDF' | 'Reference' | 'Video' | 'Code';
+  category: 'Tutorial' | 'PDF' | 'Reference' | 'Video' | 'Code' | 'Documentation';
   type: 'download' | 'external';
   url: string;
   size?: string;
@@ -21,9 +21,9 @@ const Resources: React.FC = () => {
       id: 1,
       title: 'Arduino Programming Guide',
       description: 'Comprehensive guide to Arduino programming for robotics applications',
-      category: 'Tutorial',
-      type: 'download',
-      url: '#',
+      category: 'Documentation',
+      type: 'external',
+      url: 'https://docs.arduino.cc/programming/',
       size: '2.5 MB',
       date: '2024-02-10'
     },
@@ -31,86 +31,10 @@ const Resources: React.FC = () => {
       id: 2,
       title: 'ROS (Robot Operating System) Documentation',
       description: 'Complete reference documentation for ROS development',
-      category: 'Reference',
+      category: 'Documentation',
       type: 'external',
-      url: '#',
+      url: 'https://docs.ros.org/',
       date: '2024-02-08'
-    },
-    {
-      id: 3,
-      title: 'Computer Vision for Robotics',
-      description: 'Advanced techniques for implementing computer vision in robotic systems',
-      category: 'PDF',
-      type: 'download',
-      url: '#',
-      size: '5.2 MB',
-      date: '2024-02-05'
-    },
-    {
-      id: 4,
-      title: 'Kinematics and Dynamics Tutorial',
-      description: 'Video series covering robot kinematics and dynamics fundamentals',
-      category: 'Video',
-      type: 'external',
-      url: '#',
-      date: '2024-02-01'
-    },
-    {
-      id: 5,
-      title: 'Python for Robotics',
-      description: 'Code examples and libraries for Python-based robotics development',
-      category: 'Code',
-      type: 'external',
-      url: '#',
-      date: '2024-01-28'
-    },
-    {
-      id: 6,
-      title: 'Sensor Integration Manual',
-      description: 'Step-by-step guide for integrating various sensors in robotic systems',
-      category: 'PDF',
-      type: 'download',
-      url: '#',
-      size: '3.8 MB',
-      date: '2024-01-25'
-    },
-    {
-      id: 7,
-      title: 'Machine Learning in Robotics',
-      description: 'Introduction to applying ML algorithms in robotics applications',
-      category: 'Tutorial',
-      type: 'download',
-      url: '#',
-      size: '4.1 MB',
-      date: '2024-01-20'
-    },
-    {
-      id: 8,
-      title: 'PCB Design for Robotics',
-      description: 'Best practices for designing custom PCBs for robotic applications',
-      category: 'Reference',
-      type: 'external',
-      url: '#',
-      date: '2024-01-15'
-    },
-    {
-      id: 9,
-      title: 'SLAM Algorithm Implementation',
-      description: 'Code repository with SLAM algorithm implementations and examples',
-      category: 'Code',
-      type: 'external',
-      url: '#',
-      date: '2024-01-10'
-    },
-    {
-      id: 10,
-      title: 'Robotics Competition Handbook',
-      description: 'Official handbook for robotics competitions with rules and guidelines',
-      category: 'PDF',
-      type: 'download',
-      url: '#',
-      size: '1.9 MB',
-      date: '2024-01-05'
     }
   ];
 

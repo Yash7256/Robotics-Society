@@ -46,38 +46,27 @@ const Home: React.FC = () => {
   const achievements = [
     {
       year: '2024',
-      title: 'RoboCup World Championship',
-      description: 'First place in autonomous navigation category',
+      title: 'IARC',
+      description: 'Participated In Line Following Competition help by Techkriti IIT Kanpur',
       image: 'https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg'
-    },
-    {
-      year: '2023',
-      title: 'IEEE Robotics Competition',
-      description: 'Regional champions in humanoid robotics',
-      image: 'https://images.pexels.com/photos/1181437/pexels-photo-1181437.jpeg'
-    },
-    {
-      year: '2023',
-      title: 'Innovation Award',
-      description: 'Best student project for medical robotics',
-      image: 'https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg'
     }
+    
   ];
 
   const upcomingEvents = [
     {
       date: 'Mar 15',
-      title: 'Arduino Workshop',
+      title: 'Autoo-Cad Training',
       description: 'Beginner-friendly introduction to microcontroller programming'
     },
     {
       date: 'Mar 22',
-      title: 'Guest Lecture',
+      title: 'Electronics Training',
       description: 'Industry expert on autonomous vehicle technology'
     },
     {
       date: 'Apr 5',
-      title: 'Competition Prep',
+      title: 'Data Analytics',
       description: 'Final preparations for the National Robotics Championship'
     }
   ];
