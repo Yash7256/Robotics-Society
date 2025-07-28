@@ -35,12 +35,23 @@ const Gallery: React.FC = () => {
     },
     {
       id: 3,
-      src: 'https://i.ibb.co/Jw8txfj9/IMG-20240922-WA0038.jpg',
+      src: 'https://i.ibb.co/Jw8txfj9/IMG-20240922-WA0038.jpg', 
       alt: '2024',
       year: '2024',
       category: 'Events',
       description: 'MOU based Robotics Workshop with TECHFEST IITB'
+    },
+
+     {
+      id: 4,
+      src: 'https://i.ibb.co/chLGQLxm/Whats-App-Image-2025-07-28-at-11-19-15-AM.jpg',   
+      alt: '2024',
+      year: '2024',
+      category: 'Events',
+      description: 'TechUtsav Team'
     }
+    
+   
   ];
 
   const years = ['All', ...Array.from(new Set(images.map(img => img.year))).sort().reverse()];
