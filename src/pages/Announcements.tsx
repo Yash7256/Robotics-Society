@@ -16,71 +16,31 @@ const Announcements: React.FC = () => {
   const announcements: Announcement[] = [
     {
       id: 1,
-      title: 'RoboCup 2024 Registration Open',
+      title: 'Auto-Cad Training ',
       date: '2024-02-15',
-      description: 'Registration is now open for RoboCup 2024! Join our team and compete against the best robotics clubs worldwide. Limited spots available.',
+      description: 'For 2024-2028 Batch',
       link: '#',
       pinned: true,
-      category: 'Competition'
+      category: 'Workshop'
     },
     {
       id: 2,
-      title: 'Weekly Meeting - AI in Robotics',
+      title: 'Basics Electronics Training',
       date: '2024-02-10',
-      description: 'This week\'s meeting will focus on implementing AI algorithms in robotic systems. Guest speaker from Tesla Autopilot team.',
+      description: 'For 2025-2029',
       pinned: true,
-      category: 'Meeting'
+      category: 'Workshop'
     },
     {
       id: 3,
-      title: 'Arduino Workshop for Beginners',
+      title: 'Data Analytics',
       date: '2024-02-08',
-      description: 'Learn the basics of Arduino programming and circuit design. Perfect for newcomers to robotics. All materials provided.',
+      description: 'For 2023-2027 (Prerequisites - Python',
       link: '#',
       pinned: false,
       category: 'Workshop'
-    },
-    {
-      id: 4,
-      title: 'Robotics Showcase 2024',
-      date: '2024-02-05',
-      description: 'Annual showcase of student projects. Presents your work to industry professionals and fellow students.',
-      pinned: false,
-      category: 'Event'
-    },
-    {
-      id: 5,
-      title: 'New Lab Equipment Arrival',
-      date: '2024-02-01',
-      description: 'We\'ve received new 3D printers, servo motors, and microcontrollers. Check the equipment checkout system for availability.',
-      pinned: false,
-      category: 'General'
-    },
-    {
-      id: 6,
-      title: 'FIRST Robotics Competition Team Formation',
-      date: '2024-01-28',
-      description: 'Looking for dedicated members to join our FRC team. Experience with CAD, programming, or mechanical design preferred.',
-      link: '#',
-      pinned: false,
-      category: 'Competition'
-    },
-    {
-      id: 7,
-      title: 'Soldering Safety Workshop',
-      date: '2024-01-25',
-      description: 'Mandatory safety workshop for all members using soldering equipment. Learn proper techniques and safety protocols.',
-      pinned: false,
-      category: 'Workshop'
-    },
-    {
-      id: 8,
-      title: 'Guest Lecture: Industry Robotics Trends',
-      date: '2024-01-20',
-      description: 'Industry professional will discuss current trends in robotics automation and career opportunities.',
-      pinned: false,
-      category: 'Event'
     }
+  
   ];
 
   const getCategoryColor = (category: string) => {
