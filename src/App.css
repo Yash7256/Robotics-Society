@@ -40,7 +40,7 @@ html {
 
 /* Smooth transitions for all elements */
 * {
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.2s ease, opacity 0.2s ease, background-color 0.2s ease, color 0.2s ease;
 }
 
 /* Disable transitions for reduced motion users */
@@ -53,11 +53,11 @@ html {
 
 /* Smooth hover effects */
 .smooth-hover {
-  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: transform 0.3s ease;
 }
 
 .smooth-hover:hover {
-  transform: translateY(-8px);
+  transform: translateY(-4px);
 }
 
 /* Parallax effect */
@@ -211,48 +211,48 @@ html {
 
 /* Floating animation */
 .floating {
-  animation: floating 3s ease-in-out infinite;
+  animation: floating 4s ease-in-out infinite;
 }
 
 @keyframes floating {
   0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
+  50% { transform: translateY(-6px); }
 }
 
 /* Pulse animation */
 .pulse {
-  animation: pulse 2s infinite;
+  animation: pulse 3s infinite;
 }
 
 @keyframes pulse {
   0%, 100% { opacity: 1; }
-  50% { opacity: 0.5; }
+  50% { opacity: 0.7; }
 }
 
 /* Slide in animations */
 .slide-in-left {
-  animation: slideInLeft 0.8s ease-out;
+  animation: slideInLeft 0.6s ease-out;
 }
 
 .slide-in-right {
-  animation: slideInRight 0.8s ease-out;
+  animation: slideInRight 0.6s ease-out;
 }
 
 @keyframes slideInLeft {
-  from { transform: translateX(-100px); opacity: 0; }
+  from { transform: translateX(-50px); opacity: 0; }
   to { transform: translateX(0); opacity: 1; }
 }
 
 @keyframes slideInRight {
-  from { transform: translateX(100px); opacity: 0; }
+  from { transform: translateX(50px); opacity: 0; }
   to { transform: translateX(0); opacity: 1; }
 }
 
 /* Stagger animation */
 .stagger-item {
   opacity: 0;
-  transform: translateY(30px);
-  animation: staggerIn 0.6s ease-out forwards;
+  transform: translateY(20px);
+  animation: staggerIn 0.4s ease-out forwards;
 }
 
 .stagger-item:nth-child(1) { animation-delay: 0.1s; }
@@ -267,4 +267,40 @@ html {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+/* Optimized animations */
+.will-change-transform {
+  will-change: transform;
+}
+
+.will-change-opacity {
+  will-change: opacity;
+}
+
+/* Tagline animation */
+.tagline-container {
+  height: 2rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.tagline-text {
+  position: absolute;
+  width: 100%;
+  animation: slideUp 9s infinite;
+}
+
+.tagline-text:nth-child(2) {
+  animation-delay: 3s;
+}
+
+.tagline-text:nth-child(3) {
+  animation-delay: 6s;
+}
+
+@keyframes slideUp {
+  0%, 30% { transform: translateY(0); opacity: 1; }
+  33%, 97% { transform: translateY(-100%); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
 }

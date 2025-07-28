@@ -242,8 +242,10 @@ const Resources: React.FC = () => {
                     href={resource.url}
                     target={resource.type === 'external' ? '_blank' : '_self'}
                     rel={resource.type === 'external' ? 'noopener noreferrer' : ''}
+                    download={resource.type === 'download' ? resource.title : undefined}
                     className="flex items-center px-4 py-2 bg-black text-white hover:bg-gray-800 transition-colors duration-300 rounded font-semibold text-sm"
                   >
+
                     {resource.type === 'download' ? (
                       <>
                         <Download className="w-4 h-4 mr-2" />

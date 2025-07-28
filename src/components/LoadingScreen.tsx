@@ -17,9 +17,9 @@ const LoadingScreen: React.FC = () => {
     const interval = setInterval(() => {
       setProgress(prev => {
         if (prev >= 100) return 100;
-        return prev + 2;
+        return prev + 3;
       });
-    }, 50);
+    }, 40);
 
     const stepInterval = setInterval(() => {
       setCurrentStep(prev => {
@@ -28,10 +28,11 @@ const LoadingScreen: React.FC = () => {
         }
         return prev;
       });
-    }, 800);
+    }, 700);
 
     return () => {
       clearInterval(interval);
+
       clearInterval(stepInterval);
     };
   }, []);

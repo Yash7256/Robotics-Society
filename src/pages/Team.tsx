@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Linkedin, Mail } from 'lucide-react';
+import { Linkedin, Mail, Github } from 'lucide-react';
 
 interface TeamMember {
   id: number;
@@ -8,6 +8,7 @@ interface TeamMember {
   role: string;
   image: string;
   linkedin?: string;
+  github?: string;
   email?: string;
   bio: string;
 }
@@ -20,6 +21,7 @@ const Team: React.FC = () => {
       role: 'President',
       image: 'https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg',
       linkedin: '#',
+      github: '#',
       email: 'alex@roboticsclub.edu',
       bio: 'Computer Science major specializing in AI and robotics. Leading our autonomous systems projects.'
     },
@@ -29,6 +31,7 @@ const Team: React.FC = () => {
       role: 'Vice President',
       image: 'https://images.pexels.com/photos/733872/pexels-photo-733872.jpeg',
       linkedin: '#',
+      github: '#',
       email: 'sarah@roboticsclub.edu',
       bio: 'Mechanical Engineering student with expertise in robot design and manufacturing.'
     },
@@ -38,6 +41,7 @@ const Team: React.FC = () => {
       role: 'Technical Lead',
       image: 'https://images.pexels.com/photos/1040880/pexels-photo-1040880.jpeg',
       linkedin: '#',
+      github: '#',
       email: 'marcus@roboticsclub.edu',
       bio: 'Electrical Engineering major focusing on embedded systems and sensor integration.'
     },
@@ -47,6 +51,7 @@ const Team: React.FC = () => {
       role: 'Software Lead',
       image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg',
       linkedin: '#',
+      github: '#',
       email: 'emily@roboticsclub.edu',
       bio: 'Software Engineering student passionate about robotics algorithms and machine learning.'
     },
@@ -56,6 +61,7 @@ const Team: React.FC = () => {
       role: 'Hardware Lead',
       image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg',
       linkedin: '#',
+      github: '#',
       email: 'david@roboticsclub.edu',
       bio: 'Mechatronics Engineering major specializing in actuators and control systems.'
     },
@@ -65,6 +71,7 @@ const Team: React.FC = () => {
       role: 'Competition Coordinator',
       image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg',
       linkedin: '#',
+      github: '#',
       email: 'lisa@roboticsclub.edu',
       bio: 'Industrial Engineering student organizing our competition teams and events.'
     },
@@ -74,6 +81,7 @@ const Team: React.FC = () => {
       role: 'Research Lead',
       image: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg',
       linkedin: '#',
+      github: '#',
       email: 'james@roboticsclub.edu',
       bio: 'PhD candidate in Robotics focusing on human-robot interaction and collaborative systems.'
     },
@@ -83,6 +91,7 @@ const Team: React.FC = () => {
       role: 'Workshop Coordinator',
       image: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg',
       linkedin: '#',
+      github: '#',
       email: 'nina@roboticsclub.edu',
       bio: 'Computer Engineering major organizing educational workshops and training sessions.'
     }
@@ -128,13 +137,25 @@ const Team: React.FC = () => {
                     </div>
                     <h3 className="text-xl font-bold text-center mb-2">{member.name}</h3>
                     <p className="text-center text-gray-600 font-semibold mb-4">{member.role}</p>
-                    <div className="flex justify-center space-x-4 mt-auto">
+                    <div className="flex justify-center space-x-3 mt-auto">
                       {member.linkedin && (
                         <a
                           href={member.linkedin}
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="p-2 border border-gray-300 rounded-full hover:bg-black hover:text-white hover:border-black transition-all duration-300"
                         >
                           <Linkedin className="w-4 h-4" />
+                        </a>
+                      )}
+                      {member.github && (
+                        <a
+                          href={member.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="p-2 border border-gray-300 rounded-full hover:bg-black hover:text-white hover:border-black transition-all duration-300"
+                        >
+                          <Github className="w-4 h-4" />
                         </a>
                       )}
                       {member.email && (

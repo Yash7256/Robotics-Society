@@ -1,12 +1,17 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, ChevronLeft, ChevronRight } from 'lucide-react';
+import { X, ChevronLeft, ChevronRight, Linkedin, Github } from 'lucide-react';
 
 interface TeamPhoto {
   id: number;
   year: string;
   image: string;
-  members: string[];
+  members: Array<{
+    name: string;
+    role: string;
+    linkedin?: string;
+    github?: string;
+  }>;
   description: string;
 }
 
@@ -19,16 +24,16 @@ const PastTeams: React.FC = () => {
       year: '2023',
       image: 'https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg',
       members: [
-        'Alex Chen - President',
-        'Sarah Johnson - Vice President',
-        'Marcus Kim - Technical Lead',
-        'Emily Rodriguez - Software Lead',
-        'David Park - Hardware Lead',
-        'Lisa Wang - Competition Coordinator',
-        'James Miller - Research Lead',
-        'Nina Patel - Workshop Coordinator',
-        'Ryan Thompson - Media Manager',
-        'Sophie Lee - Secretary'
+        { name: 'Alex Chen', role: 'President', linkedin: '#', github: '#' },
+        { name: 'Sarah Johnson', role: 'Vice President', linkedin: '#', github: '#' },
+        { name: 'Marcus Kim', role: 'Technical Lead', linkedin: '#', github: '#' },
+        { name: 'Emily Rodriguez', role: 'Software Lead', linkedin: '#', github: '#' },
+        { name: 'David Park', role: 'Hardware Lead', linkedin: '#', github: '#' },
+        { name: 'Lisa Wang', role: 'Competition Coordinator', linkedin: '#', github: '#' },
+        { name: 'James Miller', role: 'Research Lead', linkedin: '#', github: '#' },
+        { name: 'Nina Patel', role: 'Workshop Coordinator', linkedin: '#', github: '#' },
+        { name: 'Ryan Thompson', role: 'Media Manager', linkedin: '#', github: '#' },
+        { name: 'Sophie Lee', role: 'Secretary', linkedin: '#', github: '#' }
       ],
       description: '2023 was a breakthrough year for our club. We won the Regional RoboCup championship and launched our first autonomous rover project. The team grew to 50+ active members.'
     },
@@ -37,14 +42,14 @@ const PastTeams: React.FC = () => {
       year: '2022',
       image: 'https://images.pexels.com/photos/1181437/pexels-photo-1181437.jpeg',
       members: [
-        'Michael Chang - President',
-        'Jessica Liu - Vice President',
-        'Thomas Anderson - Technical Lead',
-        'Rachel Green - Software Lead',
-        'Kevin Martinez - Hardware Lead',
-        'Amy Wilson - Event Coordinator',
-        'Daniel Brown - Research Assistant',
-        'Maya Patel - Outreach Lead'
+        { name: 'Michael Chang', role: 'President', linkedin: '#', github: '#' },
+        { name: 'Jessica Liu', role: 'Vice President', linkedin: '#', github: '#' },
+        { name: 'Thomas Anderson', role: 'Technical Lead', linkedin: '#', github: '#' },
+        { name: 'Rachel Green', role: 'Software Lead', linkedin: '#', github: '#' },
+        { name: 'Kevin Martinez', role: 'Hardware Lead', linkedin: '#', github: '#' },
+        { name: 'Amy Wilson', role: 'Event Coordinator', linkedin: '#', github: '#' },
+        { name: 'Daniel Brown', role: 'Research Assistant', linkedin: '#', github: '#' },
+        { name: 'Maya Patel', role: 'Outreach Lead', linkedin: '#', github: '#' }
       ],
       description: 'In 2022, we focused on building our foundation and establishing key partnerships with local tech companies. Our humanoid robot project began this year.'
     },
@@ -53,13 +58,13 @@ const PastTeams: React.FC = () => {
       year: '2021',
       image: 'https://images.pexels.com/photos/1181367/pexels-photo-1181367.jpeg',
       members: [
-        'Jennifer Davis - President',
-        'Andrew Kim - Vice President',
-        'Laura Smith - Technical Lead',
-        'Chris Johnson - Software Lead',
-        'Maria Garcia - Hardware Lead',
-        'Jason Wang - Competition Manager',
-        'Emma Taylor - Research Lead'
+        { name: 'Jennifer Davis', role: 'President', linkedin: '#', github: '#' },
+        { name: 'Andrew Kim', role: 'Vice President', linkedin: '#', github: '#' },
+        { name: 'Laura Smith', role: 'Technical Lead', linkedin: '#', github: '#' },
+        { name: 'Chris Johnson', role: 'Software Lead', linkedin: '#', github: '#' },
+        { name: 'Maria Garcia', role: 'Hardware Lead', linkedin: '#', github: '#' },
+        { name: 'Jason Wang', role: 'Competition Manager', linkedin: '#', github: '#' },
+        { name: 'Emma Taylor', role: 'Research Lead', linkedin: '#', github: '#' }
       ],
       description: 'Despite the challenges of remote learning, 2021 was a year of innovation. We developed our first virtual robotics simulation platform and continued our research remotely.'
     },
@@ -68,12 +73,12 @@ const PastTeams: React.FC = () => {
       year: '2020',
       image: 'https://images.pexels.com/photos/1181498/pexels-photo-1181498.jpeg',
       members: [
-        'Robert Lee - President',
-        'Michelle Zhang - Vice President',
-        'Steven Park - Technical Lead',
-        'Ashley Brown - Software Lead',
-        'Carlos Rodriguez - Hardware Lead',
-        'Samantha Wilson - Event Coordinator'
+        { name: 'Robert Lee', role: 'President', linkedin: '#', github: '#' },
+        { name: 'Michelle Zhang', role: 'Vice President', linkedin: '#', github: '#' },
+        { name: 'Steven Park', role: 'Technical Lead', linkedin: '#', github: '#' },
+        { name: 'Ashley Brown', role: 'Software Lead', linkedin: '#', github: '#' },
+        { name: 'Carlos Rodriguez', role: 'Hardware Lead', linkedin: '#', github: '#' },
+        { name: 'Samantha Wilson', role: 'Event Coordinator', linkedin: '#', github: '#' }
       ],
       description: 'The founding year of our modern robotics program. We established our core curriculum and built our first workshop space in the engineering building.'
     },
@@ -82,11 +87,11 @@ const PastTeams: React.FC = () => {
       year: '2019',
       image: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg',
       members: [
-        'Victoria Chen - President',
-        'Tyler Johnson - Vice President',
-        'Amanda Davis - Technical Lead',
-        'Brandon Kim - Software Lead',
-        'Nicole Garcia - Hardware Lead'
+        { name: 'Victoria Chen', role: 'President', linkedin: '#', github: '#' },
+        { name: 'Tyler Johnson', role: 'Vice President', linkedin: '#', github: '#' },
+        { name: 'Amanda Davis', role: 'Technical Lead', linkedin: '#', github: '#' },
+        { name: 'Brandon Kim', role: 'Software Lead', linkedin: '#', github: '#' },
+        { name: 'Nicole Garcia', role: 'Hardware Lead', linkedin: '#', github: '#' }
       ],
       description: 'Our early days were marked by enthusiasm and determination. With limited resources but unlimited passion, we laid the groundwork for what would become a premier robotics program.'
     },
@@ -95,10 +100,10 @@ const PastTeams: React.FC = () => {
       year: '2018',
       image: 'https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg',
       members: [
-        'Jonathan Miller - Founder/President',
-        'Grace Liu - Co-founder',
-        'Nathan Wilson - Technical Advisor',
-        'Olivia Martinez - Outreach Lead'
+      { name: 'Jonathan Miller', role: 'Founder/President', linkedin: '#', github: '#' },
+      { name: 'Grace Liu', role: 'Co-founder', linkedin: '#', github: '#' },
+      { name: 'Nathan Wilson', role: 'Technical Advisor', linkedin: '#', github: '#' },
+      { name: 'Olivia Martinez', role: 'Outreach Lead', linkedin: '#', github: '#' }
       ],
       description: 'The very beginning of our journey. A small group of passionate students came together with a shared vision of advancing robotics education on campus.'
     }
@@ -138,8 +143,9 @@ const PastTeams: React.FC = () => {
           transition={{ duration: 0.8 }}
         >
           <h1 className="text-5xl font-bold mb-4 scanner">Past Teams</h1>
+          <h1 className="text-5xl font-bold mb-4 scanner">Alumni</h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Celebrating the legacy of our robotics community through the years
+            Honoring the legacy of our robotics community through the years
           </p>
         </motion.div>
 
@@ -169,7 +175,7 @@ const PastTeams: React.FC = () => {
                 <div className="p-6">
                   <h3 className="text-2xl font-bold mb-2">Team {team.year}</h3>
                   <p className="text-gray-600 mb-4">
-                    {team.members.length} Members
+                    {team.members.length} Alumni
                   </p>
                   <button className="text-black font-semibold hover:text-gray-600 transition-colors duration-300">
                     View Details →
@@ -264,17 +270,43 @@ const PastTeams: React.FC = () => {
                 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                   <div>
-                    <h3 className="text-xl font-bold mb-4">Team Members</h3>
-                    <ul className="space-y-2">
+                    <h3 className="text-xl font-bold mb-4">Alumni Members</h3>
+                    <div className="space-y-4">
                       {selectedTeam.members.map((member, index) => (
-                        <li key={index} className="text-gray-700">
-                          {member}
-                        </li>
+                        <div key={index} className="flex items-center justify-between p-3 bg-gray-50 rounded">
+                          <div>
+                            <div className="font-semibold text-gray-800">{member.name}</div>
+                            <div className="text-sm text-gray-600">{member.role}</div>
+                          </div>
+                          <div className="flex space-x-2">
+                            {member.linkedin && (
+                              <a
+                                href={member.linkedin}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="p-2 bg-white rounded-full hover:bg-black hover:text-white transition-all duration-300"
+                              >
+                                <Linkedin className="w-4 h-4" />
+                              </a>
+                            )}
+                            {member.github && (
+                              <a
+                                href={member.github}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="p-2 bg-white rounded-full hover:bg-black hover:text-white transition-all duration-300"
+                              >
+                                <Github className="w-4 h-4" />
+                              </a>
+                            )}
+                          </div>
+                        </div>
                       ))}
-                    </ul>
+                    </div>
                   </div>
                   
                   <div>
+
                     <h3 className="text-xl font-bold mb-4">Year Highlights</h3>
                     <p className="text-gray-700 leading-relaxed">
                       {selectedTeam.description}
