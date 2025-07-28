@@ -19,99 +19,27 @@ const Gallery: React.FC = () => {
   const images: GalleryImage[] = [
     {
       id: 1,
-      src: 'https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg',
-      alt: 'Autonomous rover testing',
+      src: 'https://i.ibb.co/ynWkMgXL/Whats-App-Image-2025-07-04-at-11-19-29-PM-1.jpg',
+      alt: 'Gyanotsav',
       year: '2024',
-      category: 'Projects',
-      description: 'Testing our autonomous rover in the campus courtyard'
+      category: 'Events',
+      description: 'Techutsav'
     },
     {
       id: 2,
-      src: 'https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg',
-      alt: 'Robotic arm demonstration',
+      src: 'https://i.ibb.co/v41Zwr1y/Whats-App-Image-2025-07-28-at-11-00-46-AM.jpg',
+      alt: 'Race',
       year: '2024',
-      category: 'Projects',
-      description: 'Precision robotic arm picking up objects during demonstration'
+      category: 'Events',
+      description: 'Drone Race'
     },
     {
       id: 3,
-      src: 'https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg',
-      alt: 'Team meeting 2024',
+      src: 'https://i.ibb.co/Jw8txfj9/IMG-20240922-WA0038.jpg',
+      alt: '2024',
       year: '2024',
       category: 'Events',
-      description: 'Weekly team meeting discussing upcoming competition strategies'
-    },
-    {
-      id: 4,
-      src: 'https://images.pexels.com/photos/442587/pexels-photo-442587.jpeg',
-      alt: 'Drone flight test',
-      year: '2024',
-      category: 'Projects',
-      description: 'Outdoor flight testing of our swarm drone system'
-    },
-    {
-      id: 5,
-      src: 'https://images.pexels.com/photos/8566526/pexels-photo-8566526.jpeg',
-      alt: 'Humanoid robot',
-      year: '2023',
-      category: 'Projects',
-      description: 'Our humanoid assistant robot in the lab environment'
-    },
-    {
-      id: 6,
-      src: 'https://images.pexels.com/photos/1181437/pexels-photo-1181437.jpeg',
-      alt: 'Competition team 2023',
-      year: '2023',
-      category: 'Competitions',
-      description: 'Team photo at the Regional RoboCup Championship'
-    },
-    {
-      id: 7,
-      src: 'https://images.pexels.com/photos/8566473/pexels-photo-8566473.jpeg',
-      alt: 'Prosthetic hand project',
-      year: '2023',
-      category: 'Projects',
-      description: 'AI-powered prosthetic hand with neural control interface'
-    },
-    {
-      id: 8,
-      src: 'https://images.pexels.com/photos/1108101/pexels-photo-1108101.jpeg',
-      alt: 'Warehouse automation bot',
-      year: '2023',
-      category: 'Projects',
-      description: 'Automated sorting robot for warehouse logistics'
-    },
-    {
-      id: 9,
-      src: 'https://images.pexels.com/photos/1181367/pexels-photo-1181367.jpeg',
-      alt: 'Workshop session',
-      year: '2023',
-      category: 'Workshops',
-      description: 'Arduino programming workshop for new members'
-    },
-    {
-      id: 10,
-      src: 'https://images.pexels.com/photos/1181498/pexels-photo-1181498.jpeg',
-      alt: 'Lab work session',
-      year: '2022',
-      category: 'Events',
-      description: 'Late night build session preparing for competition'
-    },
-    {
-      id: 11,
-      src: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg',
-      alt: 'Soldering workshop',
-      year: '2022',
-      category: 'Workshops',
-      description: 'Learning proper soldering techniques for PCB assembly'
-    },
-    {
-      id: 12,
-      src: 'https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg',
-      alt: 'First team photo',
-      year: '2022',
-      category: 'Events',
-      description: 'Our first official team photo in the new lab space'
+      description: 'MOU based Robotics Workshop with TECHFEST IITB'
     }
   ];
 

@@ -37,7 +37,7 @@ const Announcements: React.FC = () => {
       date: '2024-02-08',
       description: 'For 2023-2027 (Prerequisites - Python',
       link: '#',
-      pinned: false,
+      pinned: true,
       category: 'Workshop'
     }
   
