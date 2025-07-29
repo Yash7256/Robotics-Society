@@ -29,7 +29,7 @@ const Team: React.FC = () => {
       id: 2,
       name: 'Aman Raj',
       role: 'Club Lead',
-      image: '#',
+      image: 'https://i.ibb.co/x8H4fsBV/Picsart-25-07-29-18-22-33-310.jpg',
       linkedin: '#',
       github: '#',
       email: '#',
