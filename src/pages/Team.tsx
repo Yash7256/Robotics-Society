@@ -79,7 +79,7 @@ const Team: React.FC = () => {
       id: 7,
       name: 'Hassan Khan',
       role: 'Coordinator',
-      image: '#',
+      image: 'https://i.ibb.co/0yWPwsCC/IMG-20250729-185955.jpg',
       linkedin: '#',
       github: '#',
       email: '#',
