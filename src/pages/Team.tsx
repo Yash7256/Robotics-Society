@@ -59,7 +59,7 @@ const Team: React.FC = () => {
       id: 5,
       name: 'Harshita Upadhyay',
       role: 'Designer',
-      image: 'https://i.ibb.co/G4S9c48G/Whats-App-Image-2025-07-29-at-6-19-39-PM.jpg',
+      image: 'https://i.ibb.co/LzqmfRJy/IMG-20250729-184928.jpg',
       linkedin: '#',
       github: '#',
       email: '#',
