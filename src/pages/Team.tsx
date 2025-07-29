@@ -24,6 +24,66 @@ const Team: React.FC = () => {
       github: '#',
       email: '#',
       bio: 'Computer Science major specializing in AI and robotics. Leading our autonomous systems projects.'
+    },
+    {
+      id: 2,
+      name: 'Aman Raj',
+      role: 'Club Lead',
+      image: '#',
+      linkedin: '#',
+      github: '#',
+      email: '#',
+      bio: '#.'
+    },
+    {
+      id: 3,
+      name: 'Aadrika Rai',
+      role: 'Public Relations',
+      image: '#',
+      linkedin: '#',
+      github: '#',
+      email: '#',
+      bio: '#.'
+    },
+    {
+      id: 4,
+      name: 'Sakshi Shripal',
+      role: 'Public Relations',
+      image: '#',
+      linkedin: '#',
+      github: '#',
+      email: '#',
+      bio: '#.'
+    },
+    {
+      id: 5,
+      name: 'Harshita Upadhyay',
+      role: 'Designer',
+      image: '#',
+      linkedin: '#',
+      github: '#',
+      email: '#',
+      bio: '#.'
+    },
+    {
+      id: 6,
+      name: 'Jaspreet Singh Labana',
+      role: 'Media',
+      image: '#',
+      linkedin: '#',
+      github: '#',
+      email: '#',
+      bio: '#.'
+    },
+    {
+      id: 7,
+      name: 'Hassan Khan',
+      role: 'Coordinator',
+      image: '#',
+      linkedin: '#',
+      github: '#',
+      email: '#',
+      bio: '#.'
     }
     
   ];

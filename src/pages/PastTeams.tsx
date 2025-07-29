@@ -21,91 +21,21 @@ const PastTeams: React.FC = () => {
   const teamPhotos: TeamPhoto[] = [
     {
       id: 1,
-      year: '2023',
-      image: 'https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg',
+      year: '#',
+      image: '#',
       members: [
-        { name: 'Alex Chen', role: 'President', linkedin: '#', github: '#' },
-        { name: 'Sarah Johnson', role: 'Vice President', linkedin: '#', github: '#' },
-        { name: 'Marcus Kim', role: 'Technical Lead', linkedin: '#', github: '#' },
-        { name: 'Emily Rodriguez', role: 'Software Lead', linkedin: '#', github: '#' },
-        { name: 'David Park', role: 'Hardware Lead', linkedin: '#', github: '#' },
-        { name: 'Lisa Wang', role: 'Competition Coordinator', linkedin: '#', github: '#' },
-        { name: 'James Miller', role: 'Research Lead', linkedin: '#', github: '#' },
-        { name: 'Nina Patel', role: 'Workshop Coordinator', linkedin: '#', github: '#' },
-        { name: 'Ryan Thompson', role: 'Media Manager', linkedin: '#', github: '#' },
-        { name: 'Sophie Lee', role: 'Secretary', linkedin: '#', github: '#' }
+        { name: '#', role: '#', linkedin: '#', github: '#' },
+        { name: '#', role: '#', linkedin: '#', github: '#' },
+        { name: '#', role: '#', linkedin: '#', github: '#' },
+        { name: '#', role: '#', linkedin: '#', github: '#' },
+        { name: '#', role: '#', linkedin: '#', github: '#' },
+        { name: '#', role: '#', linkedin: '#', github: '#' },
+        { name: '#', role: '#', linkedin: '#', github: '#' },
+        { name: '#', role: '#', linkedin: '#', github: '#' },
+        { name: '#', role: '#', linkedin: '#', github: '#' },
+        { name: '#', role: '#', linkedin: '#', github: '#' }
       ],
-      description: '2023 was a breakthrough year for our club. We won the Regional RoboCup championship and launched our first autonomous rover project. The team grew to 50+ active members.'
-    },
-    {
-      id: 2,
-      year: '2022',
-      image: 'https://images.pexels.com/photos/1181437/pexels-photo-1181437.jpeg',
-      members: [
-        { name: 'Michael Chang', role: 'President', linkedin: '#', github: '#' },
-        { name: 'Jessica Liu', role: 'Vice President', linkedin: '#', github: '#' },
-        { name: 'Thomas Anderson', role: 'Technical Lead', linkedin: '#', github: '#' },
-        { name: 'Rachel Green', role: 'Software Lead', linkedin: '#', github: '#' },
-        { name: 'Kevin Martinez', role: 'Hardware Lead', linkedin: '#', github: '#' },
-        { name: 'Amy Wilson', role: 'Event Coordinator', linkedin: '#', github: '#' },
-        { name: 'Daniel Brown', role: 'Research Assistant', linkedin: '#', github: '#' },
-        { name: 'Maya Patel', role: 'Outreach Lead', linkedin: '#', github: '#' }
-      ],
-      description: 'In 2022, we focused on building our foundation and establishing key partnerships with local tech companies. Our humanoid robot project began this year.'
-    },
-    {
-      id: 3,
-      year: '2021',
-      image: 'https://images.pexels.com/photos/1181367/pexels-photo-1181367.jpeg',
-      members: [
-        { name: 'Jennifer Davis', role: 'President', linkedin: '#', github: '#' },
-        { name: 'Andrew Kim', role: 'Vice President', linkedin: '#', github: '#' },
-        { name: 'Laura Smith', role: 'Technical Lead', linkedin: '#', github: '#' },
-        { name: 'Chris Johnson', role: 'Software Lead', linkedin: '#', github: '#' },
-        { name: 'Maria Garcia', role: 'Hardware Lead', linkedin: '#', github: '#' },
-        { name: 'Jason Wang', role: 'Competition Manager', linkedin: '#', github: '#' },
-        { name: 'Emma Taylor', role: 'Research Lead', linkedin: '#', github: '#' }
-      ],
-      description: 'Despite the challenges of remote learning, 2021 was a year of innovation. We developed our first virtual robotics simulation platform and continued our research remotely.'
-    },
-    {
-      id: 4,
-      year: '2020',
-      image: 'https://images.pexels.com/photos/1181498/pexels-photo-1181498.jpeg',
-      members: [
-        { name: 'Robert Lee', role: 'President', linkedin: '#', github: '#' },
-        { name: 'Michelle Zhang', role: 'Vice President', linkedin: '#', github: '#' },
-        { name: 'Steven Park', role: 'Technical Lead', linkedin: '#', github: '#' },
-        { name: 'Ashley Brown', role: 'Software Lead', linkedin: '#', github: '#' },
-        { name: 'Carlos Rodriguez', role: 'Hardware Lead', linkedin: '#', github: '#' },
-        { name: 'Samantha Wilson', role: 'Event Coordinator', linkedin: '#', github: '#' }
-      ],
-      description: 'The founding year of our modern robotics program. We established our core curriculum and built our first workshop space in the engineering building.'
-    },
-    {
-      id: 5,
-      year: '2019',
-      image: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg',
-      members: [
-        { name: 'Victoria Chen', role: 'President', linkedin: '#', github: '#' },
-        { name: 'Tyler Johnson', role: 'Vice President', linkedin: '#', github: '#' },
-        { name: 'Amanda Davis', role: 'Technical Lead', linkedin: '#', github: '#' },
-        { name: 'Brandon Kim', role: 'Software Lead', linkedin: '#', github: '#' },
-        { name: 'Nicole Garcia', role: 'Hardware Lead', linkedin: '#', github: '#' }
-      ],
-      description: 'Our early days were marked by enthusiasm and determination. With limited resources but unlimited passion, we laid the groundwork for what would become a premier robotics program.'
-    },
-    {
-      id: 6,
-      year: '2018',
-      image: 'https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg',
-      members: [
-      { name: 'Jonathan Miller', role: 'Founder/President', linkedin: '#', github: '#' },
-      { name: 'Grace Liu', role: 'Co-founder', linkedin: '#', github: '#' },
-      { name: 'Nathan Wilson', role: 'Technical Advisor', linkedin: '#', github: '#' },
-      { name: 'Olivia Martinez', role: 'Outreach Lead', linkedin: '#', github: '#' }
-      ],
-      description: 'The very beginning of our journey. A small group of passionate students came together with a shared vision of advancing robotics education on campus.'
+      description: '#'
     }
   ];
 
