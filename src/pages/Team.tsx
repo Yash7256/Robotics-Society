@@ -142,7 +142,8 @@ const Team: React.FC = () => {
                       <img
                         src={member.image}
                         alt={member.name}
-                        className="w-24 h-24 rounded-full object-cover transition-all duration-500"
+                        className="w-32 h-32 rounded-full object-cover transition-all duration-500 image-rendering-auto"
+                        loading="lazy"
                       />
                       <div className="absolute inset-0 rounded-full border-2 border-transparent group-hover:border-colors transition-colors duration-300"></div>
                     </div>
@@ -227,6 +228,15 @@ const Team: React.FC = () => {
         }
         .group:hover .group-hover\\:rotate-y-180 {
           transform: rotateY(180deg);
+        }
+        .image-rendering-auto {
+          image-rendering: -webkit-optimize-contrast;
+          image-rendering: crisp-edges;
+        }
+        @media (min-width: 1024px) {
+          .image-rendering-auto {
+            image-rendering: auto;
+          }
         }
       `}</style>
     </div>
