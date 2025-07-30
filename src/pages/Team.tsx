@@ -84,6 +84,26 @@ const Team: React.FC = () => {
       github: '#',
       email: '#',
       bio: '#.'
+    },
+    {
+      id: 7,
+      name: 'Palak Patel',
+      role: 'Coordinator',
+      image: '#',
+      linkedin: '#',
+      github: '#',
+      email: '#',
+      bio: '#.'
+    },
+    {
+      id: 7,
+      name: 'Niyati Chouksey',
+      role: 'Coordinator',
+      image: '#',
+      linkedin: '#',
+      github: '#',
+      email: '#',
+      bio: '#.'
     }
     
   ];
