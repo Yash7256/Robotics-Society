@@ -86,7 +86,7 @@ const Team: React.FC = () => {
       bio: '#.'
     },
     {
-      id: 7,
+      id: 8,
       name: 'Palak Patel',
       role: 'Coordinator',
       image: '#',
@@ -96,7 +96,7 @@ const Team: React.FC = () => {
       bio: '#.'
     },
     {
-      id: 7,
+      id: 9,
       name: 'Niyati Chouksey',
       role: 'Coordinator',
       image: '#',
@@ -142,7 +142,7 @@ const Team: React.FC = () => {
                       <img
                         src={member.image}
                         alt={member.name}
-                        className="w-24 h-24 rounded-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                        className="w-24 h-24 rounded-full object-cover transition-all duration-500"
                       />
                       <div className="absolute inset-0 rounded-full border-2 border-transparent group-hover:border-colors transition-colors duration-300"></div>
                     </div>
