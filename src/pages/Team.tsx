@@ -144,7 +144,7 @@ const Team: React.FC = () => {
                         alt={member.name}
                         className="w-24 h-24 rounded-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
                       />
-                      <div className="absolute inset-0 rounded-full border-2 border-transparent group-hover:border-black transition-colors duration-300"></div>
+                      <div className="absolute inset-0 rounded-full border-2 border-transparent group-hover:border-colors transition-colors duration-300"></div>
                     </div>
                     <h3 className="text-xl font-bold text-center mb-2">{member.name}</h3>
                     <p className="text-center text-gray-600 font-semibold mb-4">{member.role}</p>
