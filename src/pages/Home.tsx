@@ -178,7 +178,7 @@ const features = [
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl font-bold mb-8">About Our Club</h2>
+            <h2 className="text-4xl font-bold mb-8">About Our Department</h2>
             <p className="text-xl leading-relaxed mb-8">
                The Department of Artificial Intelligence and Robotics is committed to excellence in teaching, research, and innovation in emerging technologies. The department focuses on developing intelligent systems and advanced robotic solutions to address real-world industrial and societal challenges.
             </p>
