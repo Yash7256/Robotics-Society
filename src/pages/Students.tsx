@@ -24,7 +24,7 @@ const Students: React.FC = () => {
     {
       id: 1,
       name: 'Akash Choudhary',
-      batch: '2023-2027',
+      batch: '2022-2026',
       image: '',
       linkedin: 'https://linkedin.com/in/akashchoudhary',
       github: 'https://github.com/akashchoudhary',
@@ -40,7 +40,7 @@ const Students: React.FC = () => {
     {
       id: 2,
       name: 'Arpit Koshta',
-      batch: '2023-2027',
+      batch: '2022-2026',
       image: '',
       linkedin: 'https://linkedin.com/in/arpitkoshta',
       github: 'https://github.com/arpitkoshta',
@@ -55,7 +55,7 @@ const Students: React.FC = () => {
     }
   ];
 
-  const batches = ['All', '2023-2027'];
+  const batches = ['All', '2022-2026'];
 
   const filteredStudents = selectedBatch === 'All' 
     ? students 
@@ -113,25 +113,6 @@ const Students: React.FC = () => {
               {batch === 'All' ? 'All Students' : `Batch ${batch}`}
             </button>
           ))}
-        </motion.div>
-
-        {/* Stats */}
-        <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 max-w-3xl mx-auto"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-        >
-          <div className="text-center p-8 bg-gray-50 border-2 border-gray-200 hover:border-black transition-all duration-300">
-            <Award className="w-12 h-12 mx-auto mb-4 text-black" />
-            <p className="text-4xl font-bold">{students.length}</p>
-            <p className="text-gray-600 font-semibold">Students</p>
-          </div>
-          <div className="text-center p-8 bg-gray-50 border-2 border-gray-200 hover:border-black transition-all duration-300">
-            <BookOpen className="w-12 h-12 mx-auto mb-4 text-black" />
-            <p className="text-4xl font-bold">1</p>
-            <p className="text-gray-600 font-semibold">Batch</p>
-          </div>
         </motion.div>
 
         {/* Students Grid */}

@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense } from 'react';
 import { motion } from 'framer-motion';
 import Spline from '@splinetool/react-spline';
+import { Loader2 } from 'lucide-react';
 
 const LoadingScreen: React.FC = () => {
   const [progress, setProgress] = useState(0);
@@ -20,17 +21,24 @@ const LoadingScreen: React.FC = () => {
 
   return (
     <motion.div
-      className="fixed inset-0 bg-black z-50"
+      className="fixed inset-0 bg-black z-50 flex items-center justify-center"
       exit={{ opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <Spline 
-        scene="/welcome.spline" 
-        style={{ 
-          width: '100%', 
-          height: '100%'
-        }}
-      />
+      <Suspense fallback={
+        <div className="flex flex-col items-center justify-center">
+          <Loader2 className="w-12 h-12 animate-spin text-white mb-4" />
+          <p className="text-white text-lg font-medium">Loading...</p>
+        </div>
+      }>
+        <Spline 
+          scene="/welcome.spline" 
+          style={{ 
+            width: '100%', 
+            height: '100%'
+          }}
+        />
+      </Suspense>
     </motion.div>
   );
 };

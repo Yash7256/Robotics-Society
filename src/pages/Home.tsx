@@ -1,6 +1,6 @@
-import React, { useRef } from 'react';
+import React, { useRef, Suspense } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { ChevronDown, Zap, Users, Trophy, Wrench, Calendar, Award, Cpu, Target, BookOpen, Lightbulb } from 'lucide-react';
+import { ChevronDown, Zap, Users, Trophy, Wrench, Cpu, Target, BookOpen, Lightbulb, Loader2 } from 'lucide-react';
 import Spline from '@splinetool/react-spline';
 import Footer from '../components/Footer';
 
@@ -65,13 +65,19 @@ const features = [
         style={{ y, opacity }}
       >
         <div className="absolute inset-0 pointer-events-none">
-          <Spline 
-            scene="/home.spline" 
-            style={{ 
-              width: '100%', 
-              height: '100vh'
-            }}
-          />
+          <Suspense fallback={
+            <div className="w-full h-full flex items-center justify-center bg-gray-100">
+              <Loader2 className="w-8 h-8 animate-spin text-gray-400" />
+            </div>
+          }>
+            <Spline 
+              scene="/home.spline" 
+              style={{ 
+                width: '100%', 
+                height: '100vh'
+              }}
+            />
+          </Suspense>
         </div>
 
         {/* Scroll Indicator */}
