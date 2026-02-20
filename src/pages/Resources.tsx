@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Download, ExternalLink, FileText, Video, Book, Code } from 'lucide-react';
+import { Download, ExternalLink, FileText, Book } from 'lucide-react';
 
 interface Resource {
   id: number;
   title: string;
   description: string;
-  category: 'Tutorial' | 'PDF' | 'Reference' | 'Video' | 'Code' | 'Documentation' | 'Scheme';
+  category: 'Scheme' | 'Syllabus' | 'Documentation';
   type: 'download' | 'external';
   url: string;
   size?: string;
@@ -105,10 +105,70 @@ const Resources: React.FC = () => {
       url: '/resources/schemes/scheme 8th sem.pdf',
       size: '150 KB',
       date: '2024-01-15'
+    },
+    {
+      id: 10,
+      title: '3rd Semester Syllabus',
+      description: 'Complete syllabus for 3rd semester',
+      category: 'Syllabus',
+      type: 'download',
+      url: '/resources/syllabus/3rd Sem.pdf',
+      size: '200 KB',
+      date: '2024-01-15'
+    },
+    {
+      id: 11,
+      title: '4th Semester Syllabus',
+      description: 'Complete syllabus for 4th semester',
+      category: 'Syllabus',
+      type: 'download',
+      url: '/resources/syllabus/4th sem.pdf',
+      size: '200 KB',
+      date: '2024-01-15'
+    },
+    {
+      id: 12,
+      title: '5th Semester Syllabus',
+      description: 'Complete syllabus for 5th semester',
+      category: 'Syllabus',
+      type: 'download',
+      url: '/resources/syllabus/5th sem.pdf',
+      size: '200 KB',
+      date: '2024-01-15'
+    },
+    {
+      id: 13,
+      title: '6th Semester Syllabus',
+      description: 'Complete syllabus for 6th semester',
+      category: 'Syllabus',
+      type: 'download',
+      url: '/resources/syllabus/6th sem.pdf',
+      size: '200 KB',
+      date: '2024-01-15'
+    },
+    {
+      id: 14,
+      title: '7th Semester Syllabus',
+      description: 'Complete syllabus for 7th semester',
+      category: 'Syllabus',
+      type: 'download',
+      url: '/resources/syllabus/7th sem.pdf',
+      size: '200 KB',
+      date: '2024-01-15'
+    },
+    {
+      id: 15,
+      title: '8th Semester Syllabus',
+      description: 'Complete syllabus for 8th semester',
+      category: 'Syllabus',
+      type: 'download',
+      url: '/resources/syllabus/8th sem.pdf',
+      size: '200 KB',
+      date: '2024-01-15'
     }
   ];
 
-  const categories = ['All', 'Tutorial', 'PDF', 'Reference', 'Video', 'Code', 'Scheme'];
+  const categories = ['All', 'Scheme', 'Syllabus', 'Documentation'];
 
   const filteredResources = selectedCategory === 'All' 
     ? resources 
@@ -116,23 +176,18 @@ const Resources: React.FC = () => {
 
   const getIcon = (category: string) => {
     switch (category) {
-      case 'Tutorial': return Book;
-      case 'PDF': return FileText;
-      case 'Reference': return Book;
-      case 'Video': return Video;
-      case 'Code': return Code;
       case 'Scheme': return FileText;
+      case 'Syllabus': return Book;
+      case 'Documentation': return FileText;
       default: return FileText;
     }
   };
 
   const getCategoryColor = (category: string) => {
     switch (category) {
-      case 'Tutorial': return 'bg-blue-100 text-blue-800 border-blue-200';
-      case 'PDF': return 'bg-red-100 text-red-800 border-red-200';
-      case 'Reference': return 'bg-green-100 text-green-800 border-green-200';
-      case 'Video': return 'bg-purple-100 text-purple-800 border-purple-200';
-      case 'Code': return 'bg-orange-100 text-orange-800 border-orange-200';
+      case 'Scheme': return 'bg-yellow-100 text-yellow-800 border-yellow-200';
+      case 'Syllabus': return 'bg-green-100 text-green-800 border-green-200';
+      case 'Documentation': return 'bg-blue-100 text-blue-800 border-blue-200';
       default: return 'bg-gray-100 text-gray-800 border-gray-200';
     }
   };
