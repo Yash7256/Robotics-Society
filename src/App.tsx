@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import LoadingScreen from './components/LoadingScreen';
@@ -6,11 +6,11 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
-import Team from './pages/Team';
-import Announcements from './pages/Announcements';
+import About from './pages/About';
 import Resources from './pages/Resources';
-import PastTeams from './pages/PastTeams';
+import Wokwi from './pages/Wokwi';
 import Gallery from './pages/Gallery';
+import Students from './pages/Students';
 import './App.css';
 
 function App() {
@@ -42,11 +42,11 @@ function App() {
                 <Routes>
                   <Route path="/" element={<Home />} />
                   <Route path="/projects" element={<><Projects /><Footer /></>} />
-                  <Route path="/team" element={<><Team /><Footer /></>} />
-                  <Route path="/announcements" element={<><Announcements /><Footer /></>} />
+                  <Route path="/about" element={<><About /><Footer /></>} />
                   <Route path="/resources" element={<><Resources /><Footer /></>} />
-                  <Route path="/past-teams" element={<><PastTeams /><Footer /></>} />
+                  <Route path="/wokwi" element={<><Wokwi /><Footer /></>} />
                   <Route path="/gallery" element={<><Gallery /><Footer /></>} />
+                  <Route path="/students" element={<><Students /><Footer /></>} />
                 </Routes>
               </div>
             </Router>

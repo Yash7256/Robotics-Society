@@ -21,22 +21,22 @@ const Projects: React.FC = () => {
   const projects: Project[] = [
     {
       id: 1,
-      title: 'Radar System',
-      description: 'A self-navigating rover capable of obstacle detection and path planning using computer vision.',
-      year: '2024',
-      category: 'Basic Electronics',
-      image: 'https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg',
-      alt: 'Radar',
+      title: 'CyberSec CLI',
+      description: 'AI Powered Port Scanner',
+      year: '2025',
+      category: 'Software',
+      image: '',
+      alt: '',
       github: '#',
-      demo: '#'
+      demo: 'https://cybersec-kru4.onrender.com/'
     },
     {
       id: 2,
-      title: 'Human Following Bot',
-      description: 'Precision robotic arm with 6 degrees of freedom for industrial automation tasks.',
-      year: '2024',
-      category: 'Basic Electronics',
-      image: 'https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg',
+      title: 'Medimate',
+      description: 'Medicine Dispenser',
+      year: '2025',
+      category: 'Hardware + Software',
+      image: '',
       alt: 'Bot',
       github: '#'
     }
@@ -65,7 +65,7 @@ const Projects: React.FC = () => {
         >
           <h1 className="text-5xl font-bold mb-4 scanner">Our Projects</h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Explore our innovative robotics projects that push the boundaries of technology
+            Hands-on projects led by students under the mentorship of faculty.
           </p>
         </motion.div>
 

@@ -6,7 +6,7 @@ interface Resource {
   id: number;
   title: string;
   description: string;
-  category: 'Tutorial' | 'PDF' | 'Reference' | 'Video' | 'Code' | 'Documentation';
+  category: 'Tutorial' | 'PDF' | 'Reference' | 'Video' | 'Code' | 'Documentation' | 'Scheme';
   type: 'download' | 'external';
   url: string;
   size?: string;
@@ -35,10 +35,80 @@ const Resources: React.FC = () => {
       type: 'external',
       url: 'https://docs.ros.org/',
       date: '2024-02-08'
+    },
+    {
+      id: 3,
+      title: '1st Year Scheme',
+      description: 'Academic scheme for 1st semester students',
+      category: 'Scheme',
+      type: 'download',
+      url: '/resources/schemes/1st semester scheme.pdf',
+      size: '150 KB',
+      date: '2024-01-15'
+    },
+    {
+      id: 4,
+      title: '3rd Semester Scheme',
+      description: 'Academic scheme for 3rd semester students',
+      category: 'Scheme',
+      type: 'download',
+      url: '/resources/schemes/scheme 3rd sem.pdf',
+      size: '150 KB',
+      date: '2024-01-15'
+    },
+    {
+      id: 5,
+      title: '4th Semester Scheme',
+      description: 'Academic scheme for 4th semester students',
+      category: 'Scheme',
+      type: 'download',
+      url: '/resources/schemes/scheme 4th sem.pdf',
+      size: '150 KB',
+      date: '2024-01-15'
+    },
+    {
+      id: 6,
+      title: '5th Semester Scheme',
+      description: 'Academic scheme for 5th semester students',
+      category: 'Scheme',
+      type: 'download',
+      url: '/resources/schemes/scheme 5th sem.pdf',
+      size: '150 KB',
+      date: '2024-01-15'
+    },
+    {
+      id: 7,
+      title: '6th Semester Scheme',
+      description: 'Academic scheme for 6th semester students',
+      category: 'Scheme',
+      type: 'download',
+      url: '/resources/schemes/scheme 6th sem.pdf',
+      size: '150 KB',
+      date: '2024-01-15'
+    },
+    {
+      id: 8,
+      title: '7th Semester Scheme',
+      description: 'Academic scheme for 7th semester students',
+      category: 'Scheme',
+      type: 'download',
+      url: '/resources/schemes/scheme 7th sem.pdf',
+      size: '150 KB',
+      date: '2024-01-15'
+    },
+    {
+      id: 9,
+      title: '8th Semester Scheme',
+      description: 'Academic scheme for 8th semester students',
+      category: 'Scheme',
+      type: 'download',
+      url: '/resources/schemes/scheme 8th sem.pdf',
+      size: '150 KB',
+      date: '2024-01-15'
     }
   ];
 
-  const categories = ['All', 'Tutorial', 'PDF', 'Reference', 'Video', 'Code'];
+  const categories = ['All', 'Tutorial', 'PDF', 'Reference', 'Video', 'Code', 'Scheme'];
 
   const filteredResources = selectedCategory === 'All' 
     ? resources 
@@ -51,6 +121,7 @@ const Resources: React.FC = () => {
       case 'Reference': return Book;
       case 'Video': return Video;
       case 'Code': return Code;
+      case 'Scheme': return FileText;
       default: return FileText;
     }
   };

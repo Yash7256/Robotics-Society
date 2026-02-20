@@ -11,12 +11,13 @@ const Navbar: React.FC = () => {
   const navItems = [
     { path: '/', label: 'Home' },
     { path: '/projects', label: 'Projects' },
-    { path: '/team', label: 'Team' },
-    { path: '/announcements', label: 'Announcements' },
+    { path: '/about', label: 'About' },
+    { path: '/students', label: 'Students' },
     { path: '/resources', label: 'Resources' },
-    { path: '/past-teams', label: 'Past Teams' },
     { path: '/gallery', label: 'Gallery' },
   ];
+
+  const externalLink = 'https://neruo-bot.vercel.app';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -51,7 +52,7 @@ const Navbar: React.FC = () => {
               whileHover={{ scale: 1.05 }}
               transition={{ duration: 0.3 }}
             >
-              ROBOTICS CLUB
+              Dept Of AI & ROBOTICS
             </motion.span>
           </Link>
 
@@ -79,6 +80,24 @@ const Navbar: React.FC = () => {
                 />
               </Link>
             ))}
+            <a
+              href={externalLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`relative px-3 py-2 transition-all duration-400 group smooth-hover ${
+                scrolled ? 'text-gray-300 hover:text-white' : 'text-gray-600 hover:text-black'
+              }`}
+            >
+              Club
+              <motion.div
+                className={`absolute bottom-0 left-0 w-full h-0.5 ${
+                  scrolled ? 'bg-white' : 'bg-black'
+                }`}
+                initial={{ scaleX: 0 }}
+                whileHover={{ scaleX: 1 }}
+                transition={{ duration: 0.4, type: "spring", stiffness: 200 }}
+              />
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -123,6 +142,17 @@ const Navbar: React.FC = () => {
               {item.label}
             </Link>
           ))}
+          <a
+            href={externalLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`block px-3 py-2 transition-all duration-400 smooth-hover ${
+              scrolled ? 'text-gray-300 hover:text-white' : 'text-gray-600 hover:text-black'
+            }`}
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Club
+          </a>
         </div>
       </motion.div>
     </motion.nav>

@@ -1,6 +1,6 @@
-# Robotics Club Website
+# Dept Of AI & ROBOTICS Website
 
-A modern, animated website for the Robotics Club built with React, TypeScript, and Vite. This sleek black and white themed website showcases club projects, team members, achievements, and upcoming events with smooth animations and responsive design.
+A modern, animated website for the Dept Of AI & ROBOTICS built with React, TypeScript, and Vite. This sleek black and white themed website showcases club projects, team members, achievements, and upcoming events with smooth animations and responsive design.
 
 ## 🚀 Features
 
@@ -113,7 +113,7 @@ Create a `.env` file in the root directory for environment-specific variables:
 
 ```env
 VITE_API_URL=your-api-url
-VITE_APP_TITLE=Robotics Club
+VITE_APP_TITLE=Dept Of AI & ROBOTICS
 ```
 
 ## 🧪 Testing
